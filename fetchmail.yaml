@@ -1,0 +1,14 @@
+#Content of fetchmail.yaml
+---
+- alertmai:  xxx@chip1stop.com
+- passwdmail :  base64decode:/etc/fetchmail/hashpassword
+- url : outlook.office365.com
+- port : 993
+- ssl : 1
+- flag: unseen
+- timecheck : 1
+- timewait : 5
+- content :  /opt/fetchmail/datafetch/xxx.$(date +"%Y/%m/%d )/xxx.$(date +%H:%M:%S).eml
+- zipday : 3
+- deleteday: 14
+- command: filter & create
