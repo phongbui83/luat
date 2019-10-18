@@ -1,0 +1,6 @@
+#Content of createticket.yaml
+---
+- url : http://lv-p14.chip1stop.com/redmine/
+- apikey : base64decode:/etc/fetchmail/redmineinfo
+- filter :  0
+- command: create_incident_$type.py
